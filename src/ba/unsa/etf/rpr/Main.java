@@ -9,7 +9,10 @@ public class Main {
         System.out.println("Unesite n: ");
         int n;
         n = in.nextInt();
-        
+        for(int i = 1; i <= n; i++) {
+            if(i % sumaCifara(i) == 0)
+                System.out.print(i + ", ");
+        }
     }
 
     public static int sumaCifara(int x) {
